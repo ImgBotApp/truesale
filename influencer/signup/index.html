@@ -1,0 +1,27 @@
+<h1>SignUp as an Influencer</h1>
+
+<a href="/">Back</a>
+
+<div class="dv-notify" ></div>
+<form class="dv-signup">
+	<input type="text" name="username" placeholder="please enter your username here"><br>
+	<input type="text" name="firstname" placeholder=" please enter your full name here"><br>
+     	<input type="number" name="phonenumber" placeholder="please enter your password here"><br>
+	<input type="password" name="password" placeholder="please enter your password here"><br> 
+
+	Please select your most prefered product 
+	<select name="prefered_product">
+		<option value="clothing accessories">Clothing Accessories</option>
+	</select>
+<br> 
+<input type="hidden" name="lastname" value="I"> 
+<button type="submit"> SignUp</button>
+
+<script src="http://localhost:8080/js/devless-sdk.js" class="devless-connection" devless-con-token="a947b78bce227483367f556580c4c536"></script>
+
+<script>
+devlessCallbacks(function(resp){
+	console.log("again");
+	console.log(resp)
+})
+</script>
