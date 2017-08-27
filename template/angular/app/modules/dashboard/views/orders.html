@@ -1,0 +1,354 @@
+<!-- BEGIN CONTENT BODY -->
+<div class="page-content-wrapper">
+    <div class="content-wrapper container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title">
+                    <div class="row">
+
+                        <h4 class="pull-left">Orders List</h4>
+
+
+                        <ol class="breadcrumb pull-right">
+                            <li><a href="javascript: void(0);"><i class="fa fa-home"></i></a></li>
+                            <li>Orders List</li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- end .page title-->
+
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="well">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="control-label" for="input-order-id">Order ID</label>
+                                <input type="text" name="filter_order_id" value="" placeholder="Order ID" id="input-order-id" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-customer">Customer</label>
+                                <input type="text" name="filter_customer" value="" placeholder="Customer" id="input-customer" class="form-control" autocomplete="off"><ul class="dropdown-menu"></ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="control-label" for="input-order-status">Order Status</label>
+                                <select name="filter_order_status" id="input-order-status" class="form-control">
+                                    <option value="*"></option>
+                                    <option value="0">Missing Orders</option>
+                                    <option value="7">Canceled</option>
+                                    <option value="9">Canceled Reversal</option>
+                                    <option value="13">Chargeback</option>
+                                    <option value="5">Complete</option>
+                                    <option value="8">Denied</option>
+                                    <option value="14">Expired</option>
+                                    <option value="10">Failed</option>
+                                    <option value="1">Pending</option>
+                                    <option value="15">Processed</option>
+                                    <option value="2">Processing</option>
+                                    <option value="11">Refunded</option>
+                                    <option value="12">Reversed</option>
+                                    <option value="3">Shipped</option>
+                                    <option value="16">Voided</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-total">Total</label>
+                                <input type="text" name="filter_total" value="" placeholder="Total" id="input-total" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="control-label" for="input-date-added">Date Added</label>
+                                <div class="input-group date">
+                                    <input type="text" name="filter_date_added" value="" placeholder="Date Added" data-format="YYYY-MM-DD" id="input-date-added" class="form-control">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                                                    </span></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="input-date-modified">Date Modified</label>
+                                <div class="input-group date">
+                                    <input type="text" name="filter_date_modified" value="" placeholder="Date Modified" data-format="YYYY-MM-DD" id="input-date-modified" class="form-control">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                                                    </span></div>
+                            </div>
+                            <button type="button" id="button-filter" class="btn btn-primary pull-right"><i class="fa fa-search"></i> Filter</button>
+                        </div>
+                    </div>
+                </div>
+                <form method="post" enctype="multipart/form-data" target="_blank" id="form-order">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <td style="width: 1px;" class="text-center"><input type="checkbox" onclick="$('input[name*=\'selected\']').prop('checked', this.checked);"></td>
+                                <td class="text-right">                    <a href="" class="desc">Order ID</a>
+                                </td>
+                                <td class="text-left">                    <a href="">Customer</a>
+                                </td>
+                                <td class="text-left">                    <a href="">Status</a>
+                                </td>
+                                <td class="text-right">                    <a href="">Total</a>
+                                </td>
+                                <td class="text-left">                    <a href="">Date Added</a>
+                                </td>
+                                <td class="text-left">                    <a href="">Date Modified</a>
+                                </td>
+                                <td class="text-right">Action</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3135">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3135</td>
+                                <td class="text-left">jokds slaksalk</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$130.00</td>
+                                <td class="text-left">26/09/2016</td>
+                                <td class="text-left">26/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3134">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3134</td>
+                                <td class="text-left">Nguyen Nguyen</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$105.00</td>
+                                <td class="text-left">26/09/2016</td>
+                                <td class="text-left">26/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3132">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3132</td>
+                                <td class="text-left">Saheed San</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$205.00</td>
+                                <td class="text-left">25/09/2016</td>
+                                <td class="text-left">25/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3131">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3131</td>
+                                <td class="text-left">Dudu Sanusi</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$405.00</td>
+                                <td class="text-left">25/09/2016</td>
+                                <td class="text-left">25/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3130">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3130</td>
+                                <td class="text-left">Dudu Sanusi</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$405.00</td>
+                                <td class="text-left">25/09/2016</td>
+                                <td class="text-left">25/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3129">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3129</td>
+                                <td class="text-left">Saheed San</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$205.00</td>
+                                <td class="text-left">25/09/2016</td>
+                                <td class="text-left">25/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3128">
+                                    <input type="hidden" name="shipping_code[]" value=""></td>
+                                <td class="text-right">3128</td>
+                                <td class="text-left">efge ter</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$1.00</td>
+                                <td class="text-left">24/09/2016</td>
+                                <td class="text-left">24/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3126">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3126</td>
+                                <td class="text-left">asd asd</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$130.00</td>
+                                <td class="text-left">24/09/2016</td>
+                                <td class="text-left">24/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3125">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3125</td>
+                                <td class="text-left">a b</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$105.00</td>
+                                <td class="text-left">24/09/2016</td>
+                                <td class="text-left">24/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3124">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3124</td>
+                                <td class="text-left">Shoaib Qureshi</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$105.00</td>
+                                <td class="text-left">24/09/2016</td>
+                                <td class="text-left">24/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3123">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3123</td>
+                                <td class="text-left">mitesh gadara</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$105.00</td>
+                                <td class="text-left">23/09/2016</td>
+                                <td class="text-left">23/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3121">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3121</td>
+                                <td class="text-left">s d</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$205.00</td>
+                                <td class="text-left">22/09/2016</td>
+                                <td class="text-left">22/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3120">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3120</td>
+                                <td class="text-left">Firma 1222222</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$105.00</td>
+                                <td class="text-left">22/09/2016</td>
+                                <td class="text-left">22/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3119">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3119</td>
+                                <td class="text-left">Rui Ramos</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$130.00</td>
+                                <td class="text-left">22/09/2016</td>
+                                <td class="text-left">22/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3117">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3117</td>
+                                <td class="text-left">fchhfgh cfghfcgh</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$105.00</td>
+                                <td class="text-left">22/09/2016</td>
+                                <td class="text-left">22/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3116">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3116</td>
+                                <td class="text-left">g m</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$130.00</td>
+                                <td class="text-left">21/09/2016</td>
+                                <td class="text-left">21/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3115">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3115</td>
+                                <td class="text-left">Huy Vu</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$130.00</td>
+                                <td class="text-left">20/09/2016</td>
+                                <td class="text-left">20/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3113">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3113</td>
+                                <td class="text-left">sdgsdg dfhfh</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$105.00</td>
+                                <td class="text-left">20/09/2016</td>
+                                <td class="text-left">20/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3112">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3112</td>
+                                <td class="text-left">dett dwa</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$105.00</td>
+                                <td class="text-left">20/09/2016</td>
+                                <td class="text-left">20/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">                    <input type="checkbox" name="selected[]" value="3111">
+                                    <input type="hidden" name="shipping_code[]" value="flat.flat"></td>
+                                <td class="text-right">3111</td>
+                                <td class="text-left">Saheed San</td>
+                                <td class="text-left">Pending</td>
+                                <td class="text-right">$205.00</td>
+                                <td class="text-left">19/09/2016</td>
+                                <td class="text-left">19/09/2016</td>
+                                <td class="text-right"><a href="" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a> <a href="" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Edit"><i class="fa fa-pencil"></i></a> <a href="" id="button-delete3135" data-toggle="tooltip" title="" class="btn btn-danger" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 text-left"><ul class="pagination"><li class="active"><span>1</span></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=2">2</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=3">3</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=4">4</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=5">5</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=6">6</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=7">7</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=8">8</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=9">9</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=2">&gt;</a></li><li><a href="http://demo.opencart.com/admin/index.php?route=sale/order&amp;token=0f61b9baf2dfc2af0b86a31b36d0aebe&amp;page=120">&gt;|</a></li></ul></div>
+            <div class="col-sm-6 text-right">Showing 1 to 20 of 2397 (120 Pages)</div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="footer">
+        <div class="pull-right">
+            10GB of <strong>250GB</strong> Free.
+        </div>
+        <div>
+            <strong>Copyright</strong> Example Company © 2016
+        </div>
+    </div>
+</div>
+<!-- END CONTENT BODY -->

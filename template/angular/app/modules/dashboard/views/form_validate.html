@@ -1,0 +1,230 @@
+<!-- BEGIN CONTENT BODY -->
+<div class="page-content-wrapper">
+    <div class="content-wrapper container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title">
+                    <div class="row">
+
+                        <h4 class="pull-left">Form Validation</h4>
+
+
+                        <ol class="breadcrumb pull-right">
+                            <li><a href="javascript: void(0);"><i class="fa fa-home"></i></a></li>
+                            <li>Form Validation</li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- end .page title-->
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-card margin-b-30">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        Basic Form
+                        <div class="pull-right">
+                            <div class="btn-group" dropdown>
+                                <button dropdown-toggle type="button" class="btn btn-info btn-rounded btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu panel-dropdown" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+
+                        <form role="form" data-toggle="validator" name="userForm">
+                            <div class="form-group"><label>Email</label> <input type="email" placeholder="Enter email" class="form-control" data-error="Email address is invalid" required><div class="help-block with-errors"></div></div>
+                            <div class="form-group"><label>Password</label> <input type="password" placeholder="Password" class="form-control" required></div>
+                            <div>
+                                <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>Log in</strong></button>
+                                <label> <input type="checkbox" class="i-checks"> Remember me </label>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-card margin-b-30">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        Horizontal Form
+                        <div class="pull-right">
+                            <div class="btn-group" dropdown>
+                                <button dropdown-toggle type="button" class="btn btn-info btn-rounded btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu panel-dropdown" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" data-toggle="validator">
+                            <p>Sign in today for more expirience.</p>
+                            <div class="form-group"><label class="col-lg-2 control-label">Email</label>
+
+                                <div class="col-lg-10"><input type="email" placeholder="Email" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group"><label class="col-lg-2 control-label">Password</label>
+
+                                <div class="col-lg-10"><input type="password" placeholder="Password" class="form-control" required></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <div class="i-checks"><label> <input type="checkbox" required><i></i> Remember me </label></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button class="btn btn-sm btn-primary" type="submit">Sign in</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-card margin-b-30">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        Advance Form
+                        <div class="pull-right">
+                            <div class="btn-group" dropdown>
+                                <button dropdown-toggle type="button" class="btn btn-info btn-rounded btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu panel-dropdown" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form method="get" class="form-horizontal" data-toggle="validator">
+                            <div class="form-group"><label class="col-sm-2 control-label">Normal</label>
+
+                                <div class="col-sm-10"><input type="text" class="form-control" required></div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group"><label class="col-sm-2 control-label">Help text</label>
+                                <div class="col-sm-10"><input type="text" class="form-control"> <span class="help-block m-b-none">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group"><label class="col-sm-2 control-label">Password</label>
+
+                                <div class="col-sm-10"><input type="password" class="form-control" name="password"></div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group"><label class="col-sm-2 control-label">Placeholder</label>
+
+                                <div class="col-sm-10"><input type="text" placeholder="placeholder" class="form-control" required></div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group"><label class="col-lg-2 control-label">Disabled</label>
+
+                                <div class="col-lg-10"><input type="text" disabled="" placeholder="Disabled input here..." class="form-control" ></div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group"><label class="col-lg-2 control-label">Static control</label>
+
+                                <div class="col-lg-10"><p class="form-control-static">email@example.com</p></div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group"><label class="col-sm-2 control-label">Checkboxes and radios <br>
+                                <small class="text-navy">Normal Bootstrap elements</small></label>
+
+                                <div class="col-sm-10">
+                                    <div><label> <input type="checkbox" value="" required> Option one is this and that—be sure to include why it's great </label></div>
+                                    <div><label> <input type="radio"  value="option1" id="optionsRadios1" name="optionsRadios" required> Option one is this and that—be sure to
+                                        include why it's great </label></div>
+                                    <div><label> <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios" required> Option two can be something else and selecting it will
+                                        deselect option one </label></div>
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group"><label class="col-sm-2 control-label">Inline checkboxes</label>
+
+                                <div class="col-sm-10"><label class="checkbox-inline"> <input type="checkbox" value="option1" id="inlineCheckbox1" required> a </label> <label class="checkbox-inline">
+                                    <input type="checkbox" value="option2" id="inlineCheckbox2" required> b </label> <label class="checkbox-inline">
+                                    <input type="checkbox" value="option3" id="inlineCheckbox3" required> c </label></div>
+                            </div>
+
+                            <div class="hr-line-dashed"></div>
+
+                            <div class="form-group"><label class="col-sm-2 control-label">Select</label>
+
+                                <div class="col-sm-10"><select class="form-control m-b" name="account" required>
+
+                                    <option>option 0</option>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                </select>
+
+                                    <div class="col-lg-4 m-l-n"><select class="form-control" multiple="" required>
+
+                                        <option>option 5</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                        <option>option 4</option>
+                                    </select></div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-white" type="submit">Cancel</button>
+                                    <button class="btn btn-primary" type="submit">Save changes</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="footer">
+        <div class="pull-right">
+            10GB of <strong>250GB</strong> Free.
+        </div>
+        <div>
+            <strong>Copyright</strong> Example Company © 2016
+        </div>
+    </div>
+</div>
+
+
+<!-- END CONTENT BODY -->

@@ -1,0 +1,292 @@
+<div id="wrapperInner">
+    <div class="content-wrapper container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title">
+                    <h1>Dashboard<small></small></h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-home"></i></a></li>
+                        <li class="active">Dashboard</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <!-- end .page title-->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-card recent-activites">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Dashboard information and statistics</h4>
+                        <div class="panel-actions">
+                            <a href="javascript:;" data-target="#collapseOne" data-toggle="collapse" class="panel-action panel-action-toggle" ng-click="collapsed = !collapsed"></a>
+                            <a href="javascript:;" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse in">
+                    <div class="panel-body text-center">
+                        <div class="col-lg-3">
+                            <h2>$26,252</h2>
+                            <h4>Total sale in last month</h4>
+                            <br/>
+                            <h2>$6,252</h2>
+                            <h4>Total sale in current month</h4>
+                        </div>
+                        <div class="col-lg-6">
+                            <canvas id="lineChart" height="110"></canvas>
+                        </div>
+                        <div class="col-lg-3">
+                            <h2>4150</h2>
+                            <h4>Total user in last month</h4>
+                            <br/>
+                            <h2>500</h2>
+                            <h4>Total user in current month</h4>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="widget-box clearfix">
+                    <div class="pull-center">
+                        <h4>User Performance</h4>
+                        <h2>17,50</h2>
+                    </div>
+                    <div class="text-center"> <i class="pe-7s-graph1 fa-4x"></i>
+                        <h1 class="m-xs">$1 206,90</h1>
+                        <h3 class="font-extra-bold no-margins text-success"> All Income </h3>
+                        <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit vestibulum.</small> </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="widget-box clearfix">
+                    <div>
+                        <h4>Users Activity</h4>
+                        <div class="m-t-xl">
+                            <h2>210</h2>
+                            </br>
+                            <span class="font-bold no-margins"> Social users </span>
+                            <div class="progress m-t-xs full progress-small">
+                                <div style="width: 55%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55"
+                                     role="progressbar" class=" progress-bar progress-bar-success"> <span class="sr-only">35% Complete (success)</span> </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6"> <small class="stats-label">Pages / Visit</small>
+                                    <h4>7.80</h4>
+                                </div>
+                                <div class="col-xs-6"> <small class="stats-label">% New Visits</small>
+                                    <h4>76.43%</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="widget-box clearfix p3-bg">
+                    <div>
+                        <div class="pad-all">
+                            <h2> HDD Usage</h2>
+                            <br/>
+                            <p class="mar-no"> <span class="pull-right text-bold">132Gb</span> Free Space </p>
+                            <p class="mar-no"> <span class="pull-right text-bold">1,45Gb</span> Used space </p>
+                        </div>
+                        <div class="pad-all text-center">
+                            <!--Placeholder--><br/>
+                            <div id="demo-sparkline-area"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="widget-box clearfix">
+                    <div>
+                        <h2> <i class="fa fa-tasks pull-right p4-color"></i></h2>
+                        <h4>Pending Orders</h4>
+                        <h2>256</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-card ">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Visitors location</h4>
+                        <div class="panel-actions">
+                            <a href="javascript:;" data-target="#collapseTwo" data-toggle="collapse" class="panel-action panel-action-toggle" ng-click="collapsed = !collapsed"></a>
+                            <a href="javascript:;" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse in">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div id="world-map" style="width: 100%; height: 280px"></div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="map_progress">
+                                    <h4>Unique Visitors</h4>
+                                    <span><small>Last Week Rise by 62%</small></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100" style="width: 62%"></div>
+                                    </div>
+                                    <h4>Registrations</h4>
+                                    <span><small>Up by 57% last 7 days</small></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%"></div>
+                                    </div>
+                                    <h4>Direct Sales</h4>
+                                    <span><small>Last Month Rise by 22%</small></span>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="width: 22%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                </div>
+                <!-- End .panel -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="panel panel-card recent-activites">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Total Product Sales</h4>
+                        <div class="panel-actions">
+                            <a href="javascript:;" data-target="#collapseThree" data-toggle="collapse" class="panel-action panel-action-toggle" ng-click="collapsed = !collapsed"></a>
+                            <a href="javascript:;" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                        </div>
+                    </div>
+                    <div id="collapseThree" class="collapse in">
+                    <div class="panel-body text-center">
+                        <div id="cw-body"></div>
+                    </div>
+                        </div>
+                </div>
+                <!-- End .panel -->
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-card recent-activites">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Monthly sale Compare</h4>
+                        <div class="panel-actions">
+                            <a href="javascript:;" data-target="#collapseFour" data-toggle="collapse" class="panel-action panel-action-toggle" ng-click="collapsed = !collapsed"></a>
+                            <a href="javascript:;" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                        </div>
+                    </div>
+                    <div id="collapseFour" class="collapse in">
+                    <div class="panel-body text-center">
+
+                        <!--Widget body-->
+                        <div id="demo-chat-body" class="in ">
+                            <div class="nano has-scrollbar" style="height:380px">
+                                <div class="nano-content pad-all" tabindex="0" style="right: -17px;">
+                                    <ul class="list-unstyled media-block">
+                                        <li class="mar-btm">
+                                            <div class="media-left"> <img src="images/avatar1.png" class="img-circle img-sm" alt="Profile Picture"> </div>
+                                            <div class="media-body pad-hor">
+                                                <div class="speech"> <a href="#" class="media-heading">John Doe</a>
+                                                    <p>Hello Lucy, how can I help you today ?</p>
+                                                    <p class="speech-time"> <i class="fa fa-clock-o fa-fw"></i>09:23AM </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mar-btm">
+                                            <div class="media-right"> <img src="images/avatar2.png" class="img-circle img-sm" alt="Profile Picture"> </div>
+                                            <div class="media-body pad-hor speech-right">
+                                                <div class="speech"> <a href="#" class="media-heading">Lucy Doe</a>
+                                                    <p>Hi, I want to buy a new shoes.</p>
+                                                    <p class="speech-time"> <i class="fa fa-clock-o fa-fw"></i> 09:23AM </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mar-btm">
+                                            <div class="media-left"> <img src="images/avatar1.png" class="img-circle img-sm" alt="Profile Picture"> </div>
+                                            <div class="media-body pad-hor">
+                                                <div class="speech"> <a href="#" class="media-heading">John Doe</a>
+                                                    <p>Shipment is free. You\'ll get your shoes tomorrow!</p>
+                                                    <p class="speech-time"> <i class="fa fa-clock-o fa-fw"></i> 09:25 </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mar-btm">
+                                            <div class="media-right"> <img src="images/avatar2.png" class="img-circle img-sm" alt="Profile Picture"> </div>
+                                            <div class="media-body pad-hor speech-right">
+                                                <div class="speech"> <a href="#" class="media-heading">Lucy Doe</a>
+                                                    <p>Wow, that\'s great!</p>
+                                                    <p class="speech-time"> <i class="fa fa-clock-o fa-fw"></i> 09:27 </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mar-btm">
+                                            <div class="media-right"> <img src="images/avatar2.png" class="img-circle img-sm" alt="Profile Picture"> </div>
+                                            <div class="media-body pad-hor speech-right">
+                                                <div class="speech"> <a href="#" class="media-heading">Lucy Doe</a>
+                                                    <p>Ok. Thanks for the answer. Appreciated.</p>
+                                                    <p class="speech-time"> <i class="fa fa-clock-o fa-fw"></i> 09:28 </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mar-btm">
+                                            <div class="media-left"> <img src="images/avatar1.png" class="img-circle img-sm" alt="Profile Picture"> </div>
+                                            <div class="media-body pad-hor">
+                                                <div class="speech"> <a href="#" class="media-heading">John Doe</a>
+                                                    <p>You are welcome! <br>
+                                                        Is there anything else I can do for you today?</p>
+                                                    <p class="speech-time"> <i class="fa fa-clock-o fa-fw"></i> 09:30 </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mar-btm">
+                                            <div class="media-right"> <img src="images/avatar2.png" class="img-circle img-sm" alt="Profile Picture"> </div>
+                                            <div class="media-body pad-hor speech-right">
+                                                <div class="speech"> <a href="#" class="media-heading">Lucy Doe</a>
+                                                    <p>Nope, That\'s it.</p>
+                                                    <p class="speech-time"> <i class="fa fa-clock-o fa-fw"></i> 09:31 </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="mar-btm">
+                                            <div class="media-left"> <img src="images/avatar1.png" class="img-circle img-sm" alt="Profile Picture"> </div>
+                                            <div class="media-body pad-hor">
+                                                <div class="speech"> <a href="#" class="media-heading">John Doe</a>
+                                                    <p>Thank you for contacting us today</p>
+                                                    <p class="speech-time"> <i class="fa fa-clock-o fa-fw"></i> 09:32 </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="nano-pane">
+                                    <div class="nano-slider" style="height: 141px; transform: translate(0px, 0px);"></div>
+                                </div>
+                            </div>
+
+                            <!--Widget footer-->
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <input type="text" placeholder="Enter your text" class="form-control chat-input">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-primary btn-block" type="submit">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                </div>
+                <!-- End .panel -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+<!-- BEGIN CONTENT BODY -->
+<div class="page-content-wrapper">
+    <div class="content-wrapper container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title">
+                    <div class="row">
+
+                        <h4 class="pull-left">WYSIHTML5 Editor </h4>
+
+
+                        <ol class="breadcrumb pull-right">
+                            <li><a href="javascript: void(0);"><i class="fa fa-home"></i></a></li>
+                            <li>WYSIHTML5 Editor </li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- end .page title-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-card margin-b-30">
+                    <!-- Start .panel -->
+                    <div class="panel-heading">
+                        WYSIHTML5 Editor
+                        <div class="pull-right">
+                            <div class="btn-group" dropdown>
+                                <button dropdown-toggle type="button" class="btn btn-info btn-rounded btn-xs dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu panel-dropdown" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+
+                        <div id="wysihtml5-editor-toolbar">
+                            <header>
+                                <ul class="commands">
+                                    <li data-wysihtml5-command="bold" title="Make text bold (CTRL + B)" class="command"></li>
+                                    <li data-wysihtml5-command="italic" title="Make text italic (CTRL + I)" class="command"></li>
+                                    <li data-wysihtml5-command="insertUnorderedList" title="Insert an unordered list" class="command"></li>
+                                    <li data-wysihtml5-command="insertOrderedList" title="Insert an ordered list" class="command"></li>
+                                    <li data-wysihtml5-command="createLink" title="Insert a link" class="command"></li>
+                                    <li data-wysihtml5-command="insertImage" title="Insert an image" class="command"></li>
+                                    <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h1" title="Insert headline 1" class="command"></li>
+                                    <li data-wysihtml5-command="formatBlock" data-wysihtml5-command-value="h2" title="Insert headline 2" class="command"></li>
+                                    <li data-wysihtml5-command-group="foreColor" class="fore-color command" title="Color the selected text" >
+                                        <ul>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="silver"></li>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="gray"></li>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="maroon"></li>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="red"></li>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="purple"></li>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="green"></li>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="olive"></li>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="navy"></li>
+                                            <li data-wysihtml5-command="foreColor" data-wysihtml5-command-value="blue"></li>
+                                        </ul>
+                                    </li>
+                                    <li data-wysihtml5-command="insertSpeech" title="Insert speech" class="command"></li>
+                                    <li data-wysihtml5-action="change_view" title="Show HTML" class="action"></li>
+                                </ul>
+                            </header>
+                            <div data-wysihtml5-dialog="createLink" style="display: none;">
+                                <label>
+                                    Link:
+                                    <input data-wysihtml5-dialog-field="href" value="http://">
+                                </label>
+                                <a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+                            </div>
+
+                            <div data-wysihtml5-dialog="insertImage" style="display: none;">
+                                <label>
+                                    Image:
+                                    <input data-wysihtml5-dialog-field="src" value="http://">
+                                </label>
+                                <a data-wysihtml5-dialog-action="save">OK</a>&nbsp;<a data-wysihtml5-dialog-action="cancel">Cancel</a>
+                            </div>
+                        </div>
+
+                        <section>
+                                        <textarea id="wysihtml5-editor" spellcheck="false" autofocus placeholder="Enter something ...">
+<h1>WYSIHTML5 - A better approach to rich text editing</h1>
+<p>wysihtml5 is an <span class="wysiwyg-color-green"><a href="https://github.com/xing/wysihtml5">open source</a></span> rich text editor based on HTML5 technology and the progressive-enhancement approach.
+    It uses a sophisticated security concept and aims to generate fully valid HTML5 markup by preventing unmaintainable tag soups and inline styles.</p>
+<h2>Features</h2>
+<ul>
+    <li>It's fast and lightweight (smaller than TinyMCE, Aloha, ...)</li>
+    <li>Auto-linking of urls as-you-type</li>
+    <li>Generates valid and semantic HTML5 markup (even when the content is pasted from MS Word)</li>
+    <li>Uses class names instead of inline styles</li>
+    <li>Unifies line break handling across browsers</li>
+    <li>Uses sandboxed iframes in order to prevent identity theft through XSS</li>
+    <li>Speech-input for Chrome</li>
+    <li>No jQuery required</li>
+</ul>
+<h2>Browser Support</h2>
+<ul>
+
+    <li><strong>Graceful degradation:</strong> Unsupported browsers will get a <i>&amp;lt;textarea&amp;gt;</i></li>
+</ul>
+                                        </textarea>
+                        </section>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="clearfix"></div>
+    <div class="footer">
+        <div class="pull-right">
+            10GB of <strong>250GB</strong> Free.
+        </div>
+        <div>
+            <strong>Copyright</strong> Example Company © 2016
+        </div>
+    </div>
+</div>
+<!-- END CONTENT BODY -->
